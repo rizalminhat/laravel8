@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user_home');
+Route::resource('/user', App\Http\Controllers\UserController::class);
