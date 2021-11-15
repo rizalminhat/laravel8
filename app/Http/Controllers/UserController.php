@@ -14,7 +14,7 @@ class UserController extends Controller
     public function index()
     {
         //
-        echo 'hello world';
+        return view('user.userhome');
     }
 
     /**
