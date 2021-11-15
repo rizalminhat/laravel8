@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user_home');
+Route::get('/user', 'UserController@index')->name('user_home');
 Route::resource('/user', App\Http\Controllers\UserController::class);
