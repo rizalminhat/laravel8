@@ -14,7 +14,6 @@ class UserController extends Controller
     public function index()
     {
         //
-
         echo 'hello world';
     }
 
@@ -48,6 +47,7 @@ class UserController extends Controller
     public function show($id)
     {
         //
+        echo 'hai'.$id;
     }
 
     /**
